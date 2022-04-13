@@ -18,63 +18,68 @@
                 </div>
                 <table>
                     <tr>
-                        <th colspan="4">Parede esquerda:</tr>
-                        <td colspan="2"><label for="larguraLateral">Largura: <br></label> <input type="number" name="largura"
-                                id="larguraLateral"></td>
-                        <td colspan="2"><label for="alturaLateral">Altura: <br></label> <input type="number" name="altura"
-                                id="alturaLateral"></td>
+                        <th colspan="4">Paredes Laterais:</th>
+                    </tr>
+                    <td colspan="2" class="meio"><label for="larguraLateral">Largura: <br></label> <input type="number"
+                            name="largura" id="larguraLateral"></td>
+                    <td colspan="2" class="meio"><label for="alturaLateral">Altura: <br></label> <input type="number"
+                            name="altura" id="alturaLateral"></td>
                     </tr>
                     <tr>
-                        <th colspan="4">Parede frontal:</tr>
-                        <td colspan="2"><label for="larguraFrontal">Largura: <br></label> <input type="number" name="largura"
-                                id="larguraFrontal"></td>
-                        <td colspan="2"><label for="alturaFrontal">Altura: <br></label> <input type="number" name="altura"
-                                id="alturaFrontal"></td>
+                        <th colspan="4" >Paredes Frontais:</th>
+                    </tr>
+                    <td colspan="2" class="meio"><label for="larguraFrontal">Largura: <br></label> <input type="number"
+                            name="largura" id="larguraFrontal"></td>
+                    <td colspan="2" class="meio"><label for="alturaFrontal">Altura: <br></label> <input type="number"
+                            name="altura" id="alturaFrontal"></td>
                     </tr>
                     <tr>
-                        <th>Portas:</th>
-                        <td><label for="quantidadePortas">Quantidade: <br></label> <input type="number" name="quantidadePortas"
-                                id="quantidadePortas"></td>
+                        <th >Portas:</th>
+                        <td><label for="quantidadePortas">Quantidade: <br></label> <input type="number"
+                                name="quantidadePortas" id="quantidadePortas"></td>
                         <td><label for="larguraPortas">Largura: <br></label> <input type="number" name="larguraPortas"
                                 id="larguraPortas"></td>
                         <td><label for="alturaPortas">Altura: <br></label> <input type="number" name="alturaPortas"
                                 id="alturaPortas"></td>
                     </tr>
                     <tr>
-                        <th>Janelas:</th>
-                        <td><label for="quantidadeJanelas">Quantidade: <br></label> <input type="number" name="quantidadeJanelas"
-                                id="quantidadeJanelas"></td>
+                        <th >Janelas:</th>
+                        <td><label for="quantidadeJanelas">Quantidade: <br></label> <input type="number"
+                                name="quantidadeJanelas" id="quantidadeJanelas"></td>
                         <td><label for="larguraJanelas">Largura: <br></label> <input type="number" name="larguraJanelas"
                                 id="larguraJanelas"></td>
                         <td><label for="alturaJanelas">Altura: <br></label> <input type="number" name="alturaJanelas"
                                 id="alturaJanelas"></td>
                     </tr>
                     <tr>
-                        <th>Outro:</th>
-                        <td><label for="quantidadeOutros">Quantidade: <br></label> <input type="number" name="quantidadeJanelas"
-                                id="quantidadeOutros"></td>
-                        <td><label for="larguraOutros">Largura: <br></label> <input type="number" name="larguraJanelas"
+                        <th >Outro:</th>
+                        <td><label for="quantidadeOutros">Quantidade: <br></label> <input type="number"
+                                name="quantidadeJanelas" id="quantidadeOutros"></td>
+                        <td><label for="larguraOutros">Largura: <br></label> <input type="number" name="larguraOutros"
                                 id="larguraOutros"></td>
-                        <td><label for="alturaOutros">Altura: <br></label> <input type="number" name="alturaJanelas"
+                        <td><label for="alturaOutros">Altura: <br> </label><input type="number" name="alturaOutros"
                                 id="alturaOutros"></td>
                     </tr>
                     <tr>
-                        <td colspan="2"><label for="demaos">Demãos: <br></label> <input type="number" name="quantidadeJanelas"
-                                id="demaos"></td>
-                        <td colspan="2"><label for="rendimento">Rendimento: <br></label> <input type="number" name="larguraJanelas"
-                                id="rendimento"></td>
+                        <td colspan="2" class="meio"><label for="demaos">Demãos: <br></label> <input type="number"
+                                name="demaos" id="demaos"></td>
+                        <td colspan="2" class="meio"><label for="rendimento">Rendimento: <br></label> <input
+                                type="number" name="rendimento" id="rendimento"></td>
                     </tr>
                     <tr>
                         <td colspan="4" class="meio">
                             <label for="corTinta">Cor da tinta: </label><input type="color" name="corTinta"
-                                id="corTinta">
+                                id="corTinta" oninput="trocarTinta()">
                         </td>
                     </tr>
                     <tr>
-                        <td colspan="4" class="meio"><input type="submit" value="Calcular" id="btnCalcular" onclick="calcularLitros()"></td>
+                        <td colspan="2" class="meio"><input type="submit" value="Calcular" id="btnCalcular" class="botao"
+                                onclick="calcularLitros()"></td>
+                        <td colspan="2" class="meio"><a href="./index.html"><input type="submit" value="Voltar"
+                                    id="btnVoltar" class="botao"></a></td>
                     </tr>
                     <tr>
-                        <td colspan="4" id="resultado"></td>
+                        <td colspan="4" id="resultado" class="meio"></td>
                     </tr>
                 </table>
             </div>
@@ -91,7 +96,7 @@
 
     </div>
 
+    <script src="./js/orcamento.js"></script>
 
 </body>
-
 </html>
