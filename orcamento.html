@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/orcamento.css">
+    <title>Orçamento</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="informacoes">
+            <div class="card">
+                <div class="titulo">
+                    <img src="./img/nome-sf.png" id="titulo">
+                </div>
+                <table>
+                    <tr>
+                        <th colspan="4">Parede esquerda:</tr>
+                        <td colspan="2"><label for="larguraLateral">Largura: <br></label> <input type="number" name="largura"
+                                id="larguraLateral"></td>
+                        <td colspan="2"><label for="alturaLateral">Altura: <br></label> <input type="number" name="altura"
+                                id="alturaLateral"></td>
+                    </tr>
+                    <tr>
+                        <th colspan="4">Parede frontal:</tr>
+                        <td colspan="2"><label for="larguraFrontal">Largura: <br></label> <input type="number" name="largura"
+                                id="larguraFrontal"></td>
+                        <td colspan="2"><label for="alturaFrontal">Altura: <br></label> <input type="number" name="altura"
+                                id="alturaFrontal"></td>
+                    </tr>
+                    <tr>
+                        <th>Portas:</th>
+                        <td><label for="quantidadePortas">Quantidade: <br></label> <input type="number" name="quantidadePortas"
+                                id="quantidadePortas"></td>
+                        <td><label for="larguraPortas">Largura: <br></label> <input type="number" name="larguraPortas"
+                                id="larguraPortas"></td>
+                        <td><label for="alturaPortas">Altura: <br></label> <input type="number" name="alturaPortas"
+                                id="alturaPortas"></td>
+                    </tr>
+                    <tr>
+                        <th>Janelas:</th>
+                        <td><label for="quantidadeJanelas">Quantidade: <br></label> <input type="number" name="quantidadeJanelas"
+                                id="quantidadeJanelas"></td>
+                        <td><label for="larguraJanelas">Largura: <br></label> <input type="number" name="larguraJanelas"
+                                id="larguraJanelas"></td>
+                        <td><label for="alturaJanelas">Altura: <br></label> <input type="number" name="alturaJanelas"
+                                id="alturaJanelas"></td>
+                    </tr>
+                    <tr>
+                        <th>Outro:</th>
+                        <td><label for="quantidadeOutros">Quantidade: <br></label> <input type="number" name="quantidadeJanelas"
+                                id="quantidadeOutros"></td>
+                        <td><label for="larguraOutros">Largura: <br></label> <input type="number" name="larguraJanelas"
+                                id="larguraOutros"></td>
+                        <td><label for="alturaOutros">Altura: <br></label> <input type="number" name="alturaJanelas"
+                                id="alturaOutros"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><label for="demaos">Demãos: <br></label> <input type="number" name="quantidadeJanelas"
+                                id="demaos"></td>
+                        <td colspan="2"><label for="rendimento">Rendimento: <br></label> <input type="number" name="larguraJanelas"
+                                id="rendimento"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" class="meio">
+                            <label for="corTinta">Cor da tinta: </label><input type="color" name="corTinta"
+                                id="corTinta">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" class="meio"><input type="submit" value="Calcular" id="btnCalcular" onclick="calcularLitros()"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" id="resultado"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="cores">
+            <div class="logo">
+                <img src="./img/logo-sf.png" id="logo">
+            </div>
+            <div class="cor" id="cor1"></div>
+            <div class="cor" id="cor2"></div>
+            <div class="cor" id="cor3"></div>
+            <div class="cor" id="cor4"></div>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>

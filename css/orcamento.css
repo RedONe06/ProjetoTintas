@@ -12,8 +12,16 @@
     width: 100vw;
     justify-content: space-around;
 }
+.titulo{
+    display: flex;
+    justify-content: center;
 
-/*informacoes*/
+    margin: 10px 1px 5px;
+}
+#titulo{
+    width: 90%;
+}
+
 .informacoes{
 
     width: 50%;
@@ -25,7 +33,7 @@
 .card{
     border: 1px solid rgb(168, 16, 80);
     border-radius: 5px;
-    height: 50%;
+    height: 100%;
     width: 80%;
     display: flex;
     flex-direction: column;
@@ -33,38 +41,31 @@
     box-shadow: 2px 2px 5px rgb(102, 102, 102);
 
 }
-.titulo{
-    display: flex;
-    justify-content: center;
-    margin: 10px 5px;
-}
-#titulo{
-    width: 90%;
-}
 
+table,td,tr,th{
+    width: 10%;
+    margin: 0;
+    border: 1px solid black;
+    text-align: left;
+}
+.meio{
+    text-align: center;
+}
 input{
-    width: 80%;
+    width: 50px;
+    background-color: antiquewhite;
+    border-width: 1px;
 }
-td{
-   padding-left: 10px;
-
-}
-#orcamento{
-
-    color: rgb(238, 148, 38);
-    font-size: small;
-}
-#iniciar{
-    font-size: smaller;
+#corTinta{
+    height: 20px;
 }
 label{
     font-size: 10px;
-    font-weight: 900;
+    line-height: 1;
+    font-weight: 600;
     color: rgb(209, 80, 80);
 
-    
 }
-
 
 /*cores*/
 .cores{
